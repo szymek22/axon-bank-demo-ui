@@ -1,0 +1,13 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+button .btn-spinner:not(:required) {
+    margin-left: -22px;
+    opacity: 0;
+    transition: margin .4s ease-out,opacity .2s ease-out;
+}
+button.is-loading .btn-spinner {
+    transition: margin .2s ease-in,opacity .4s ease-in;
+    margin-left: 5px;
+    opacity: 1;
+}
